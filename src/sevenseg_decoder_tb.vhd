@@ -77,37 +77,37 @@ begin
 	begin
 	-- Place test cases here. The first two have been written for you
 		w_sw <= x"0"; wait for 10 ns;
-            assert w_seg_n = "0111111" report "error on 0" severity failure;
+            assert w_seg_n = "1000000" report "error on 0" severity failure;
         w_sw <= x"1"; wait for 10 ns;
-            assert w_seg_n = "0000110" report "error on 1" severity failure;  
+            assert w_seg_n = "1111001" report "error on 1" severity failure;  
         w_sw <= x"2"; wait for 10 ns;
-            assert w_seg_n = "1011011" report "error on 2" severity failure;   
+            assert w_seg_n = "0100100" report "error on 2" severity failure;   
         w_sw <= x"3"; wait for 10 ns;
-            assert w_seg_n = "1001111" report "error on 3" severity failure;   
+            assert w_seg_n = "0110000" report "error on 3" severity failure;   
         w_sw <= x"4"; wait for 10 ns;
-            assert w_seg_n = "1100110" report "error on 4" severity failure;   
+            assert w_seg_n = "0011001" report "error on 4" severity failure;   
         w_sw <= x"5"; wait for 10 ns;
-            assert w_seg_n = "1101101" report "error on 5" severity failure;   
+            assert w_seg_n = "0010010" report "error on 5" severity failure;   
         w_sw <= x"6"; wait for 10 ns;
-            assert w_seg_n = "1111101" report "error on 6" severity failure;   
+            assert w_seg_n = "0000010" report "error on 6" severity failure;   
         w_sw <= x"7"; wait for 10 ns;
-            assert w_seg_n = "0000111" report "error on 7" severity failure;   
+            assert w_seg_n = "1111000" report "error on 7" severity failure;   
         w_sw <= x"8"; wait for 10 ns;
-            assert w_seg_n = "1111111" report "error on 8" severity failure;   
+            assert w_seg_n = "0000000" report "error on 8" severity failure;   
         w_sw <= x"9"; wait for 10 ns;
-            assert w_seg_n = "1100111" report "error on 9" severity failure;   
+            assert w_seg_n = "0010000" report "error on 9" severity failure;   
         w_sw <= x"A"; wait for 10 ns;
-            assert w_seg_n = "1110111" report "error on A" severity failure;   
+            assert w_seg_n = "0001000" report "error on A" severity failure;   
         w_sw <= x"B"; wait for 10 ns;
-            assert w_seg_n = "1111100" report "error on B" severity failure;   
+            assert w_seg_n = "0000011" report "error on B" severity failure;   
         w_sw <= x"C"; wait for 10 ns;
-            assert w_seg_n = "1011000" report "error on C" severity failure;
+            assert w_seg_n = "1000110" report "error on C" severity failure;
         w_sw <= x"D"; wait for 10 ns;
-            assert w_seg_n = "1011110" report "error on D" severity failure;
+            assert w_seg_n = "0100001" report "error on D" severity failure;
         w_sw <= x"E"; wait for 10 ns;
-            assert w_seg_n = "1111001" report "error on E" severity failure;
+            assert w_seg_n = "0000110" report "error on E" severity failure;
         w_sw <= x"F"; wait for 10 ns;
-            assert w_seg_n = "1110001" report "error on F" severity failure;              
+            assert w_seg_n = "0001110" report "error on F" severity failure;              
        
 		wait; -- wait forever
 	end process;
