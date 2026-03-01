@@ -1,5 +1,4 @@
---+----------------------------------------------------------------------------
---| 
+
 --| COPYRIGHT 2017 United States Air Force Academy All rights reserved.
 --| 
 --| United States Air Force Academy     __  _______ ___    _________ 
@@ -95,7 +94,7 @@ begin
         w_sw <= x"8"; wait for 10 ns;
             assert w_seg_n = "0000000" report "error on 8" severity failure;   
         w_sw <= x"9"; wait for 10 ns;
-            assert w_seg_n = "0010000" report "error on 9" severity failure;   
+            assert w_seg_n = "0011000" report "error on 9" severity failure;   
         w_sw <= x"A"; wait for 10 ns;
             assert w_seg_n = "0001000" report "error on A" severity failure;   
         w_sw <= x"B"; wait for 10 ns;
